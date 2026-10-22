@@ -38,6 +38,23 @@ details[open] .ic-plus{transform:rotate(45deg)}
 @media (max-width: 760px){
   .ic-hero-art{height:500px !important}
   .ic-nav-links{display:none !important}
+  .ic-a-reel{top:126px !important; width:190px !important; height:338px !important}
+}
+@media (max-width: 620px){
+  .ic-hero-art{height:460px !important; flex-basis:100% !important}
+  .ic-a-back{left:3% !important; top:30px !important; width:92% !important; height:400px !important}
+  .ic-a-tab{left:3% !important; top:2px !important; width:44% !important; height:40px !important}
+  .ic-a-front{left:0 !important; top:54px !important; width:94% !important; height:390px !important; box-shadow:6px 6px 0 #173707 !important}
+  .ic-a-label{left:14px !important; top:8px !important; font-size:20px !important}
+  .ic-a-chip{display:none !important}
+  .ic-a-reel{left:4% !important; top:96px !important; width:44% !important; max-width:180px !important; height:auto !important; aspect-ratio:9 / 16 !important; border-width:5px !important; transform:rotate(-4deg) !important}
+  .ic-a-pol{right:0 !important; top:84px !important; width:46% !important; max-width:190px !important; padding:8px 8px 10px !important; transform:rotate(5deg) !important; box-shadow:4px 4px 0 #173707 !important}
+  .ic-a-photo{height:auto !important; aspect-ratio:3 / 2 !important}
+  .ic-a-pol figcaption{font-size:19px !important; padding-top:4px !important}
+  .ic-a-pol > svg{left:12px !important; top:-24px !important; width:26px !important; height:54px !important}
+  .ic-a-note{right:2% !important; top:300px !important; width:44% !important; max-width:180px !important; padding:10px 12px 12px !important}
+  .ic-a-note p{font-size:20px !important}
+  .ic-a-stamp{left:auto !important; right:-6px !important; top:398px !important; width:84px !important; height:84px !important}
 }
 @media (prefers-reduced-motion: reduce){
   .ic-track,.ic-spin{animation:none}
@@ -104,15 +121,15 @@ details[open] .ic-plus{transform:rotate(45deg)}
       <!-- hero art: a pasta da Impulse -->
       <div class="ic-hero-art" style="flex: 1 1 440px; min-width: 0; position: relative; height: 580px; max-width: 100%">
         <!-- folder back -->
-        <div aria-hidden="true" style="position: absolute; left: 6%; top: 40px; width: 84%; height: 500px; background: #6E59D9; border-radius: 6px 22px 22px 22px; transform: rotate(-3deg)"></div>
-        <div aria-hidden="true" style="position: absolute; left: 6%; top: 8px; width: 46%; height: 50px; background: #6E59D9; border-radius: 18px 18px 0 0; transform: rotate(-3deg); transform-origin: 0 100%"></div>
+        <div class="ic-a-back" aria-hidden="true" style="position: absolute; left: 6%; top: 40px; width: 84%; height: 500px; background: #6E59D9; border-radius: 6px 22px 22px 22px; transform: rotate(-3deg)"></div>
+        <div class="ic-a-tab" aria-hidden="true" style="position: absolute; left: 6%; top: 8px; width: 46%; height: 50px; background: #6E59D9; border-radius: 18px 18px 0 0; transform: rotate(-3deg); transform-origin: 0 100%"></div>
         <!-- folder front -->
-        <div style="position: absolute; left: 4%; top: 70px; width: 86%; height: 490px; background: #8774EE; border: 2px solid #173707; border-radius: 6px 22px 22px 22px; box-shadow: 10px 10px 0 #173707">
-          <div style="position: absolute; left: 22px; top: 18px; font-family: 'Caveat', cursive; font-size: 26px; color: #FFF2E6; font-weight: 700">Pasta da sua marca</div>
-          <div style="position: absolute; right: 18px; top: 22px; font-size: 11px; font-weight: 700; letter-spacing: .14em; color: #173707; background: #FFC700; padding: 4px 10px; border-radius: 4px">IDEIAS → DIREÇÃO → MOVIMENTO</div>
+        <div class="ic-a-front" style="position: absolute; left: 4%; top: 70px; width: 86%; height: 490px; background: #8774EE; border: 2px solid #173707; border-radius: 6px 22px 22px 22px; box-shadow: 10px 10px 0 #173707">
+          <div class="ic-a-label" style="position: absolute; left: 22px; top: 18px; font-family: 'Caveat', cursive; font-size: 26px; color: #FFF2E6; font-weight: 700">Pasta da sua marca</div>
+          <div class="ic-a-chip" style="position: absolute; right: 18px; top: 22px; font-size: 11px; font-weight: 700; letter-spacing: .14em; color: #173707; background: #FFC700; padding: 4px 10px; border-radius: 4px">IDEIAS → DIREÇÃO → MOVIMENTO</div>
         </div>
         <!-- reel -->
-        <button type="button" data-reel="1" aria-label="Assistir o Reels da confeitaria em alta qualidade, com som" style="position: absolute; left: 13%; top: 112px; width: 216px; height: 384px; padding: 0; margin: 0; cursor: pointer; border-radius: 26px; overflow: hidden; border: 7px solid #FFF2E6; box-shadow: 0 18px 40px rgba(23,55,7,.35); transform: rotate(-5deg); background: #173707">
+        <button type="button" class="ic-a-reel" data-reel="1" aria-label="Assistir o Reels da confeitaria em alta qualidade, com som" style="position: absolute; left: 13%; top: 112px; width: 216px; height: 384px; padding: 0; margin: 0; cursor: pointer; border-radius: 26px; overflow: hidden; border: 7px solid #FFF2E6; box-shadow: 0 18px 40px rgba(23,55,7,.35); transform: rotate(-5deg); background: #173707">
           <video src="video/confeitaria-previa.mp4" poster="img/confeitaria-capa.jpg" autoplay="" muted="" loop="" playsinline="" aria-hidden="true" style="width: 100%; height: 100%; object-fit: cover; display: block"></video>
           <span style="position: absolute; left: 10px; top: 10px; display: flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 999px; background: rgba(23,55,7,.75); color: #FFF2E6; font-size: 11px; font-weight: 600">
             <span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: #FFC700; display: block"></span>Reels
@@ -122,19 +139,19 @@ details[open] .ic-plus{transform:rotate(45deg)}
           </span>
         </button>
         <!-- polaroid team -->
-        <figure style="position: absolute; right: 2%; top: 150px; width: 250px; margin: 0; padding: 12px 12px 14px; background: #FFFDF9; border: 2px solid #173707; box-shadow: 6px 6px 0 #173707; transform: rotate(6deg)">
-          <div style="background: #FFC700; height: 160px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
+        <figure class="ic-a-pol" style="position: absolute; right: 2%; top: 150px; width: 250px; margin: 0; padding: 12px 12px 14px; background: #FFFDF9; border: 2px solid #173707; box-shadow: 6px 6px 0 #173707; transform: rotate(6deg)">
+          <div class="ic-a-photo" style="background: #FFC700; height: 160px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
             <img src="img/higor-e-helen.webp" alt="Higor e Helen, sócios da Impulse Criativo" style="width: 90%; height: auto; display: block">
           </div>
           <figcaption style="font-family: 'Caveat', cursive; font-size: 24px; font-weight: 700; text-align: center; padding-top: 8px; color: #173707">Higor e Helen</figcaption>
           <svg aria-hidden="true" width="34" height="70" viewBox="0 0 34 70" style="position: absolute; left: 22px; top: -30px"><path d="M10 52 V14 a7 7 0 0 1 14 0 v42 a11 11 0 0 1 -22 0 V20" fill="none" stroke="#173707" stroke-width="3.2" stroke-linecap="round"></path></svg>
         </figure>
         <!-- post-it -->
-        <div class="ic-note" style="position: absolute; right: 8%; top: 430px; width: 200px; padding: 16px 16px 18px; background: #FFC700; border: 2px solid #173707; transform: rotate(-4deg); box-shadow: 4px 4px 0 rgba(23,55,7,.25)">
+        <div class="ic-note ic-a-note" style="position: absolute; right: 8%; top: 430px; width: 200px; padding: 16px 16px 18px; background: #FFC700; border: 2px solid #173707; transform: rotate(-4deg); box-shadow: 4px 4px 0 rgba(23,55,7,.25)">
           <p style="margin: 0; font-family: 'Caveat', cursive; font-size: 25px; line-height: 1.05; font-weight: 700; color: #173707">Poucos clientes por vez. De propósito.</p>
         </div>
         <!-- stamp -->
-        <svg aria-hidden="true" viewBox="0 0 140 140" width="128" height="128" style="position: absolute; left: 0; top: 440px">
+        <svg class="ic-a-stamp" aria-hidden="true" viewBox="0 0 140 140" width="128" height="128" style="position: absolute; left: 0; top: 440px">
           <g class="ic-spin">
             <circle cx="70" cy="70" r="64" fill="#FFF2E6" stroke="#173707" stroke-width="2.5"></circle>
             <circle cx="70" cy="70" r="46" fill="none" stroke="#173707" stroke-width="1.5" stroke-dasharray="3 4"></circle>
